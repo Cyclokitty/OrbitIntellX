@@ -1,0 +1,137 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #fff;
+  font-size: 1.3em;
+  padding-left: 150px;
+  padding-top: 20px;
+}
+
+.navbar-custom.navbar-default {
+  height: 100px;
+}
+
+.navbar-custom .navbar-brand {
+  color: #142F4D;
+  font-size: 1.3em;
+}
+
+#intro {
+  margin-bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./images/orbit.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+#intro h1 {
+  text-align: center;
+  color: #04070E;
+  font-size: 4em;
+  padding-top: 15vh;
+}
+
+img {
+  position: relative;
+  margin-top: 150px;
+  -webkit-animation: flight 10s linear infinite;
+  animation: flight 10s linear infinite;
+}
+
+@-webkit-keyframes flight {
+  0% {
+    top: 0; left: -10%;
+  }
+  25% {
+    top: 25%; left: 25%;
+  }
+  50% {
+    top: 50%; left: 50%;
+  }
+  75% {
+    top: 75%; left: 75%;
+  }
+  100% {
+
+    top: 100%; left: 100%;
+  }
+}
+
+@keyframes flight {
+  0% {
+    top: 0; left: -10%;
+  }
+  25% {
+    top: 25%; left: 25%;
+  }
+  50% {
+    top: 50%; left: 50%;
+  }
+  75% {
+    top: 75%; left: 75%;
+  }
+  100% {
+
+    top: 100%; left: 100%;
+  }
+}
+
+
+
+#service {
+  height: 100vh;
+  background-color: #fff;
+  color: #142F4D;
+  padding-top: 50px;
+}
+
+#service h3 {
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: 25px;
+}
+
+#service .lead {
+  padding-left: 10%;
+}
+
+#contact {
+  padding-top: 50px;
+  background-color: #142F4D;
+  height: 75vh;
+  color: #fff;
+}
+
+#contact h3 {
+  text-align: center;
+}
+
+.btn.btn-default {
+  background-color: #4598C6;
+}
+
+
+.footer {
+  margin-bottom: 0;
+  background-color: #04070E;
+  color: #fff;
+  text-align: center;
